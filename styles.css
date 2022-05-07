@@ -16,7 +16,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+a,
+button {
+  cursor: pointer;
+}
 #top-right-block {
   background-color: var(--lightgray);
   height: 50vh;
@@ -66,7 +69,7 @@ body {
   -ms-flex-item-align: auto;
   align-self: flex-start;
   width: 50%;
-  margin: 0 0 0 10vw;
+  margin: 5vh 0 0 10vw;
 }
 .right-side {
   -webkit-order: 0;
@@ -151,15 +154,18 @@ p.body-text {
   opacity: 0.7;
 }
 .attribution {
-  margin-top: 5vh;
-  font-size: 11px;
-  text-align: center;
-  font-family: var(--bodyfont);
+    margin-top: 10vh;
+    font-size: 14px;
+    text-align: center;
+    font-family: var(--bodyfont);
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--drkblue);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
-
+  color: var(--red);
   font-family: var(--bodyfont);
 }
 
@@ -246,6 +252,7 @@ p.body-text {
 
 li.fade a {
   color: var(--darkgray) !important;
+  opacity: 0.7;
 }
 
 .container .navbar ul li a:hover {
@@ -283,6 +290,16 @@ li.fade a {
 .container .navbar .icon-bar i {
   background-color: #ffffff;
   height: 2px;
+}
+
+.dot-wrapper {
+  width: 10px;
+  height: 10px;
+  background-color: var(--darkgray);
+  border-radius: 50%;
+  align-items: center;
+  align-self: center;
+  opacity: 0.2;
 }
 
 @media only screen and (max-width: 650px) {
@@ -483,14 +500,61 @@ li.fade a {
   .dot-wrapper {
     background-color: #fff;
     width: 100%;
+    height: 2px;
   }
   .dot {
     height: 2px;
     width: 80%;
     background-color: #cccccc60;
-    margin: 10px auto 10px auto;
   }
   .mystyle {
     display: none !important;
   }
+  .attribution {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  img#devices {
+    height: 60vh !important;
+  }
+  p.main-text {
+    font-size: 7rem;
+    line-height: 102px;
+  }
+  p.body-text {
+    font-size: 1.6rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    width: 50%;
+    margin: 50px 0 70px 0;
+  }
+
+  .container .navbar ul li a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 2.15rem;
+    text-transform: uppercase;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    padding: 0px 59px;
+    color: var(--drkblue);
+  }
+  p.top-half,
+  span.circle {
+    font-size: 1.25rem;
+    padding: 10px 0;
+  }
+  span.circle {
+    padding: 8px 20px;
+  }
+  .bottom-text button {
+    font-size: 22px;
+  }
+  .bottom-text span.right-button {
+    font-size: 20px;
+    letter-spacing: 6px;
 }

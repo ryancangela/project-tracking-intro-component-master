@@ -16,11 +16,27 @@ body {
   margin: 0;
   padding: 0;
 }
+.animate__fadeIn {
+  animation-delay: 150ms;
+  animation-duration: 750ms;
+}
+.animate__fadeInRight,
+.animate__fadeInLeft {
+  animation-delay: 500ms;
+  animation-duration: 1.15s;
+}
+.animate__fadeInUp {
+  animation-delay: 1.75s;
+  animation-duration: 1.5s;
+}
+
 a,
 button {
   cursor: pointer;
 }
-button:hover{opacity: .7;}
+button:hover {
+  opacity: 0.7;
+}
 #top-right-block {
   background-color: var(--lightgray);
   height: 50vh;
@@ -155,14 +171,14 @@ p.body-text {
   opacity: 0.7;
 }
 .attribution {
-    margin-top: 10vh;
-    font-size: 14px;
-    text-align: center;
-    font-family: var(--bodyfont);
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--drkblue);
+  margin-top: 10vh;
+  font-size: 14px;
+  text-align: center;
+  font-family: var(--bodyfont);
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--drkblue);
 }
 
 .attribution a {
@@ -562,4 +578,5 @@ li.fade a {
   .bottom-text span.right-button {
     font-size: 20px;
     letter-spacing: 6px;
+  }
 }

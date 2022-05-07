@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,49 +19,52 @@
 
 <body>
   <div id="top-right-block"></div>
-  <div class="container">
-    <div class="logo">
-      <a href="#"><img src="./images/logo.svg" alt="logo" width="auto" height="auto"></a>
-    </div>
-    <div class="navbar" onclick="hideHam()">
-
-      <div class="icon-bar" onclick="Show()" id="ham">
-        <i></i>
-        <i></i>
-        <i></i>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="./images/logo.svg" alt="logo" width="auto" height="auto"></a>
       </div>
+      <div class="navbar" onclick="hideHam()">
 
-      <ul id="nav-lists">
-        <li class="close"><span onclick="Hide()">×</span></li>
-        <!-- <div class="mobile-menu-wrapper"> -->
-        <li class="mobile-bg"><a href="#">Product</a></li>
-        <li class="mobile-bg"><a href="#">Features</a></li>
-        <li class="mobile-bg"><a href="#">Pricing</a></li>
-        <div class="dot-wrapper">
-          <div class="dot"></div>
+        <div class="icon-bar" onclick="Show()" id="ham">
+          <i></i>
+          <i></i>
+          <i></i>
         </div>
-        <li class="fade"><a href="#">Login</a></li>
-        <!-- </div> -->
-      </ul>
 
-    </div>
-  </div>
+        <ul id="nav-lists">
+          <li class="close"><span onclick="Hide()">×</span></li>
+          <!-- <div class="mobile-menu-wrapper"> -->
+          <li class="mobile-bg"><a href="#">Product</a></li>
+          <li class="mobile-bg"><a href="#">Features</a></li>
+          <li class="mobile-bg"><a href="#">Pricing</a></li>
+          <div class="dot-wrapper">
+            <div class="dot"></div>
+          </div>
+          <li class="fade"><a href="#">Login</a></li>
+          <!-- </div> -->
+        </ul>
 
-  <div class="main-flex">
-    <div class="left-side animate__animated animate__fadeInLeft">
-      <p class="top-half"><span class="circle">New</span>
-        Monograph Dashboard
-      </p>
-      <p class="main-text">Powerful insights into your team</p>
-      <p class="body-text">Project planning and time tracking for agile teams
-      </p>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="main-flex">
+      <div class="left-side animate__animated animate__fadeInLeft">
+        <p class="top-half"><span class="circle">New</span>
+          Monograph Dashboard
+        </p>
+        <p class="main-text">Powerful insights into your team</p>
+        <p class="body-text">Project planning and time tracking for agile teams
+        </p>
 
-      <p class="bottom-text"><button>Schedule a demo</button><span class="right-button"> to see a preview</span></p>
+        <p class="bottom-text"><button>Schedule a demo</button><span class="right-button"> to see a preview</span></p>
+      </div>
+      <div class="right-side animate__animated animate__fadeInRight">
+        <img src="./images/illustration-devices.svg" alt="Devices Illustration" width="auto" height="auto" id="devices">
+      </div>
     </div>
-    <div class="right-side animate__animated animate__fadeInRight">
-      <img src="./images/illustration-devices.svg" alt="Devices Illustration" width="auto" height="auto" id="devices">
-    </div>
-  </div>
+  </main>
   <footer>
     <p class="attribution animate__animated animate__fadeInUp">
       Challenge by <a

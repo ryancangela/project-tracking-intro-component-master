@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@300;400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
@@ -27,9 +28,9 @@
     <div class="logo">
       <a href="#"><img src="./images/logo.svg" alt="logo"></a>
     </div>
-    <div class="navbar">
+    <div class="navbar" onclick="hideHam()">
 
-      <div class="icon-bar" onclick="Show()">
+      <div class="icon-bar" onclick="Show()" id="ham">
         <i></i>
         <i></i>
         <i></i>
@@ -38,10 +39,12 @@
       <ul id="nav-lists">
         <li class="close"><span onclick="Hide()">×</span></li>
         <!-- <div class="mobile-menu-wrapper"> -->
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <div class="dot"></div>
+        <li class="mobile-bg"><a href="#">Product</a></li>
+        <li class="mobile-bg"><a href="#">Features</a></li>
+        <li class="mobile-bg"><a href="#">Pricing</a></li>
+        <div class="dot-wrapper">
+          <div class="dot"></div>
+        </div>
         <li class="fade"><a href="#">Login</a></li>
         <!-- </div> -->
       </ul>
@@ -79,6 +82,11 @@
 
     function Hide() {
       navList.classList.remove("_Menus-show");
+    }
+
+    function hideHam() {
+      var element = document.getElementById("ham");
+      element.classList.toggle("mystyle");
     }
   </script>
 </body>

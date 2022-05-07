@@ -151,12 +151,16 @@ p.body-text {
   opacity: 0.7;
 }
 .attribution {
+  margin-top: 5vh;
   font-size: 11px;
   text-align: center;
+  font-family: var(--bodyfont);
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+
+  font-family: var(--bodyfont);
 }
 
 .container {
@@ -308,7 +312,7 @@ li.fade a {
     margin: 0;
   }
   .container .navbar .icon-bar {
-    width: 100%;
+    width: 100px;
   }
   .container .navbar {
     -webkit-box-flex: 0;
@@ -316,6 +320,7 @@ li.fade a {
     width: 100%;
     flex: 0;
     margin-right: 40px;
+    min-width: 10px !important;
   }
 
   .container .navbar ul {
@@ -364,7 +369,8 @@ li.fade a {
   }
   .fade {
     color: var(--lightgray);
-    opacity: 0.8;
+    opacity: 1;
+    background-color: #fff;
   }
 
   .container .navbar ul .close {
@@ -375,15 +381,25 @@ li.fade a {
     display: inline-block;
     padding: 0px 8px;
     cursor: pointer;
-    margin-top: 0px;
+    margin-top: -18px;
+
+    font-weight: 400;
+  }
+  .container .navbar ul .close span {
+    font-size: 55px;
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 300;
+    font-family: var(--bodyfont);
   }
 
   .container .navbar .icon-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 10px 10px;
-    width: 22px;
+    padding: 10px 17px;
+    width: 100px;
     height: 16px;
     color: #555555;
   }
@@ -396,6 +412,7 @@ li.fade a {
   .container .navbar ._Menus-show {
     left: 0;
     z-index: 9;
+    background-color: transparent;
   }
   .main-flex {
     display: block !important;
@@ -460,10 +477,20 @@ li.fade a {
     letter-spacing: 3px;
     opacity: 0.7;
   }
+  .mobile-bg {
+    background-color: #fff;
+  }
+  .dot-wrapper {
+    background-color: #fff;
+    width: 100%;
+  }
   .dot {
     height: 2px;
     width: 80%;
     background-color: #cccccc60;
     margin: 10px auto 10px auto;
+  }
+  .mystyle {
+    display: none !important;
   }
 }

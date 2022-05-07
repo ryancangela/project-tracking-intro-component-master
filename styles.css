@@ -20,6 +20,7 @@ a,
 button {
   cursor: pointer;
 }
+button:hover{opacity: .7;}
 #top-right-block {
   background-color: var(--lightgray);
   height: 50vh;
@@ -303,6 +304,9 @@ li.fade a {
 }
 
 @media only screen and (max-width: 650px) {
+  #top-right-block {
+    border-radius: 0 0 0 45px;
+  }
   .container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -438,7 +442,7 @@ li.fade a {
   }
   .left-side {
     width: 100% !important;
-    margin-top: 350px !important;
+    margin-top: 40vh !important;
     order: 1;
   }
   .right-side {
@@ -449,10 +453,11 @@ li.fade a {
   }
   img#devices {
     position: absolute;
-    top: -600px;
-    width: 500px;
-    margin-left: 52px;
+    top: -625px;
+    width: auto;
+    margin-left: 0;
     overflow-x: visible;
+    height: 31vh;
   }
   .top-left {
     margin-top: 400px;
